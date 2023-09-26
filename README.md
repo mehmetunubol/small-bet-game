@@ -1,2 +1,3 @@
 db: docker-compose -f docker-compose.yml up
-npm start
+backend: nodemon src/backend/index.js
+client: npm start
