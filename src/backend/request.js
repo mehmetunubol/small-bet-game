@@ -1,6 +1,6 @@
 const getAllParticipants = async (cb) => {
   // You can await here
-  let result = await fetch("http://192.168.1.105:3001/get", {
+  let result = await fetch("http://localhost:3001/get", {
     method: "get",
     headers: {
       "Content-Type": "application/json",
@@ -18,7 +18,7 @@ const getAllParticipants = async (cb) => {
 };
 
 const addOrUpdateParticipant = async (participant, cb) => {
-  let result = await fetch("http://192.168.1.105:3001/addOrUpdate", {
+  let result = await fetch("http://localhost:3001/addOrUpdate", {
     method: "post",
     body: JSON.stringify(participant),
     headers: {
