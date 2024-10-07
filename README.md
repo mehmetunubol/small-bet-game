@@ -2,22 +2,21 @@
 
 Brief description of Small Bet Game Project.
 
-## Getting Started
+### Follow below instructions to set up the project locally.
 
-Follow these instructions to set up the project locally.
-
-### Prerequisites
+## Prerequisites
 
 Ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (using [nvm](https://github.com/nvm-sh/nvm))
 - [npm](https://www.npmjs.com/get-npm) (Node Package Manager)
+- [Docker](https://www.docker.com/)
 
-### Installing Node.js with nvm
+## Installing Node.js with nvm
 
 To ensure you're using the correct Node.js version for this project, follow these steps to install `nvm` and manage Node.js versions.
 
-#### Step 1: Install nvm
+### Step 1: Install nvm
 
 **macOS/Linux**:
 
@@ -45,7 +44,7 @@ To ensure you're using the correct Node.js version for this project, follow thes
 1. Download and install `nvm-windows` from [this link](https://github.com/coreybutler/nvm-windows/releases).
 2. Follow the instructions in the installer.
 
-#### Step 2: Install Node.js Using nvm
+### Step 2: Install Node.js Using nvm
 
 1. Install the Node.js version required by the project (specified in `.nvmrc` or package.json):
 
@@ -62,6 +61,66 @@ To ensure you're using the correct Node.js version for this project, follow thes
 3. Verify that Node.js is installed:
    ```bash
    node -v
+   ```
+
+### Installing Docker
+
+#### For macOS
+
+1. Download Docker Desktop from the [Docker Hub](https://www.docker.com/products/docker-desktop).
+2. Open the downloaded `.dmg` file and drag the Docker icon to your Applications folder.
+3. Launch Docker from your Applications folder. You might need to authorize Docker to run.
+4. Follow the installation instructions and sign in or create a Docker account if prompted.
+
+#### For Windows
+
+1. Download Docker Desktop from the [Docker Hub](https://www.docker.com/products/docker-desktop).
+2. Run the installer and follow the prompts to install Docker.
+3. After installation, you may need to enable WSL 2 (Windows Subsystem for Linux) and install a Linux kernel update package if prompted.
+4. Launch Docker Desktop and follow the setup instructions.
+
+#### For Linux
+
+1. Open a terminal and update your package index:
+
+   ```bash
+   sudo apt-get update
+   ```
+
+2. Install the required packages:
+
+   ```bash
+   sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+   ```
+
+3. Add Docker’s official GPG key:
+
+   ```bash
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   ```
+
+4. Add the Docker repository:
+
+   ```bash
+   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   ```
+
+5. Update your package index again:
+
+   ```bash
+   sudo apt-get update
+   ```
+
+6. Install Docker:
+
+   ```bash
+   sudo apt-get install docker-ce
+   ```
+
+7. After installation, start Docker and enable it to run at startup:
+   ```bash
+   sudo systemctl start docker
+   sudo systemctl enable docker
    ```
 
 ### Cloning the Repository
