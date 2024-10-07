@@ -11,6 +11,7 @@ Ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (using [nvm](https://github.com/nvm-sh/nvm))
 - [npm](https://www.npmjs.com/get-npm) (Node Package Manager)
 - [Docker](https://www.docker.com/)
+- [DockerCompose](https://docs.docker.com/compose/)
 
 ## Installing Node.js with nvm
 
