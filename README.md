@@ -63,7 +63,7 @@ To ensure you're using the correct Node.js version for this project, follow thes
    node -v
    ```
 
-### Installing Docker
+### Step 3: Installing Docker
 
 #### For macOS
 
@@ -121,6 +121,38 @@ To ensure you're using the correct Node.js version for this project, follow thes
    ```bash
    sudo systemctl start docker
    sudo systemctl enable docker
+   ```
+
+### Step 4: Installing Docker Compose
+
+#### For macOS and Linux
+
+1. Download the latest version of Docker Compose:
+
+   ```bash
+   sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   ```
+
+2. Apply executable permissions to the binary:
+
+   ```bash
+   sudo chmod +x /usr/local/bin/docker-compose
+   ```
+
+3. Verify that Docker Compose is installed correctly:
+   ```bash
+   docker-compose --version
+   ```
+
+#### For Windows
+
+1. Download Docker Desktop from the [Docker Hub](https://www.docker.com/products/docker-desktop) which includes Docker Compose by default.
+
+2. Install Docker Desktop by following the installation prompts.
+
+3. After installation, you can verify that Docker Compose is installed by opening a command prompt and running:
+   ```bash
+   docker-compose --version
    ```
 
 ### Cloning the Repository
